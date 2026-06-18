@@ -18,7 +18,7 @@
 // export default App
 
 function App() {
-  alert (sum())
+  alert(sum())
   return (
     <div>
       <h1>First Component</h1>
@@ -42,8 +42,8 @@ function Colours() {
 }
 
 
-function sum (){
-  return 1*10;
+function sum() {
+  return 1 * 10;
 }
 export default App;
 
