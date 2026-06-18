@@ -27,6 +27,7 @@ function App() {
   );
 }
 
+// Component must be start with Capital latter 
 function Fruit() {
   return (
     <h1>Apple</h1>
