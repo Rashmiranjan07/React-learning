@@ -49,7 +49,6 @@ function Colours() {
   );
 }
 
-
 function sum() {
   return 1 * 10;
 }
