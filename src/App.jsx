@@ -18,17 +18,18 @@
 // export default App
 
 
-import Login, { Profile, Setting, UserKey } from "./userComponent";
+//import Login, { Profile, Setting, UserKey } from "./userComponent";
+import ToDo from "./ToDo";
 
 function App() {
   //alert(sum())
   const userName="Rashmiranjan";
   return (
     <div>
-      <h1>JSX in React js {userName}</h1>
+      {/* <h1>JSX in React js {userName}</h1>
       <h1>{10+20+30}</h1>
 
-      <button onClick={()=>alert("hello")}>Click</button>
+      <button onClick={()=>alert("hello")}>Click</button> */}
       {/* <Fruit />
       <Colours />
 
@@ -36,6 +37,10 @@ function App() {
       <Setting />
       <Login />
       <h1>{UserKey}</h1> */}
+
+
+      <h1>JSX Exercise</h1>
+      <ToDo />
     </div>
   );
 }
