@@ -22,16 +22,17 @@ import Login, { Profile, Setting, UserKey } from "./userComponent";
 
 function App() {
   //alert(sum())
+  const userName="Rashmiranjan";
   return (
     <div>
-      <h1>First Component</h1>
-      <Fruit />
+      <h1>JSX in React js {userName}</h1>
+      {/* <Fruit />
       <Colours />
 
       <Profile />
       <Setting />
       <Login />
-      <h1>{UserKey}</h1>
+      <h1>{UserKey}</h1> */}
     </div>
   );
 }
