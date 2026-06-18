@@ -22,4 +22,7 @@ export function Setting() {
   );
 }
 
+export const UserKey="@@@@@@";
+
 export default Login;
+
