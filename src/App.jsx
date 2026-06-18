@@ -26,6 +26,9 @@ function App() {
   return (
     <div>
       <h1>JSX in React js {userName}</h1>
+      <h1>{10+20+30}</h1>
+
+      <button onClick={()=>alert("hello")}>Click</button>
       {/* <Fruit />
       <Colours />
 
