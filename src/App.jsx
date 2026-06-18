@@ -18,7 +18,7 @@
 // export default App
 
 
-import Login, { Profile,Setting } from "./userComponent";
+import Login, { Profile, Setting } from "./userComponent";
 
 function App() {
   //alert(sum())
@@ -27,9 +27,9 @@ function App() {
       <h1>First Component</h1>
       <Fruit />
       <Colours />
-   
+
       <Profile />
-<Setting />
+      <Setting />
       <Login />
     </div>
   );
