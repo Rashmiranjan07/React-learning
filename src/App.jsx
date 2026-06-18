@@ -17,13 +17,20 @@
 
 // export default App
 
+
+import Login, { Profile,Setting } from "./userComponent";
+
 function App() {
-  alert(sum())
+  //alert(sum())
   return (
     <div>
       <h1>First Component</h1>
       <Fruit />
       <Colours />
+   
+      <Profile />
+<Setting />
+      <Login />
     </div>
   );
 }
