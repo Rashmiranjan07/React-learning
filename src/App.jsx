@@ -22,26 +22,26 @@
 //import ToDo from "./ToDo";
 
 function App() {
-  const name="rashmiranjan"
-  const userObj={
-    name:"rashmiranjan",
-    email:"rasjmi@gmail.com",
-    age:29
+  const name = "rashmiranjan"
+  const userObj = {
+    name: "rashmiranjan",
+    email: "rasjmi@gmail.com",
+    age: 29
   }
-  let x=10;
-  let y=20;
+  let x = 10;
+  let y = 20;
 
-  function fruit(){
+  function fruit() {
     return "Apple"
   }
 
-  function operation(a,b,op){
-    if(op=="+"){
-      return a+b;
-    } else if (op=="-") {
-      return a-b;
+  function operation(a, b, op) {
+    if (op == "+") {
+      return a + b;
+    } else if (op == "-") {
+      return a - b;
     } else {
-      return a*b;
+      return a * b;
     }
 
 
@@ -52,14 +52,14 @@ function App() {
 
   return (
     <div>
-  
-<h1>JSX with Curly Braces</h1>
-<h1>{name}</h1>
-<h1>{x+y}</h1>
-<h1>{fruit()}</h1>
-<h1>{operation(20,10,"+")}</h1>
 
-<h1>{userObj.email}</h1>
+      <h1>JSX with Curly Braces</h1>
+      <h1>{name}</h1>
+      <h1>{x + y}</h1>
+      <h1>{fruit()}</h1>
+      <h1>{operation(20, 10, "+")}</h1>
+
+      <h1>{userObj.email}</h1>
 
     </div>
   );
