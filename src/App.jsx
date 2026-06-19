@@ -23,7 +23,7 @@ import ToDo from "./ToDo";
 
 function App() {
   //alert(sum())
-  const userName="Rashmiranjan";
+  //const userName="Rashmiranjan";
   return (
     <div>
       {/* <h1>JSX in React js {userName}</h1>
@@ -38,29 +38,47 @@ function App() {
       <Login />
       <h1>{UserKey}</h1> */}
 
-
+{/* 
       <h1>JSX Exercise</h1>
-      <ToDo />
+      <ToDo /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </div>
   );
 }
 
 // Component must be start with Capital latter 
-function Fruit() {
-  return (
-    <h1>Apple</h1>
-  );
-}
+// function Fruit() {
+//   return (
+//     <h1>Apple</h1>
+//   );
+// }
 
-function Colours() {
-  return (
-    <h1>Red</h1>
-  );
-}
+// function Colours() {
+//   return (
+//     <h1>Red</h1>
+//   );
+// }
 
-function sum() {
-  return 1 * 10;
-}
+// function sum() {
+//   return 1 * 10;
+// }
 export default App;
 
 
