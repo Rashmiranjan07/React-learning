@@ -69,6 +69,8 @@ let path="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwg
   );
 }
 
+
+
 // Component must be start with Capital latter 
 // function Fruit() {
 //   return (
