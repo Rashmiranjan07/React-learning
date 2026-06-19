@@ -23,12 +23,33 @@
 
 function App() {
   const name="rashmiranjan"
+  const userObj={
+    name:"rashmiranjan",
+    email:"rasjmi@gmail.com",
+    age:29
+  }
   let x=10;
   let y=20;
 
   function fruit(){
     return "Apple"
   }
+
+  function operation(a,b,op){
+    if(op=="+"){
+      return a+b;
+    } else if (op=="-") {
+      return a-b;
+    } else {
+      return a*b;
+    }
+
+
+  }
+
+
+
+
   return (
     <div>
   
@@ -36,6 +57,10 @@ function App() {
 <h1>{name}</h1>
 <h1>{x+y}</h1>
 <h1>{fruit()}</h1>
+<h1>{operation(20,10,"+")}</h1>
+
+<h1>{userObj.email}</h1>
+
     </div>
   );
 }
