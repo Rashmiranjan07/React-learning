@@ -90,53 +90,16 @@
 // Event & Function call 
 
 function App(){
+  function callFun(){
+    alert("function called")
+  }
   return (
     <div>
       <h1>Event & Function call </h1>
+      <button onClick={callFun}>Click me</button>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
