@@ -45,9 +45,7 @@ function App() {
       return a * b;
     }
 
-
   }
-
 
   return (
     <div>
@@ -68,8 +66,6 @@ function App() {
     </div>
   );
 }
-
-
 
 // Component must be start with Capital latter 
 // function Fruit() {
