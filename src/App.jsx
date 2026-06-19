@@ -19,46 +19,17 @@
 
 
 //import Login, { Profile, Setting, UserKey } from "./userComponent";
-import ToDo from "./ToDo";
+//import ToDo from "./ToDo";
 
 function App() {
-  //alert(sum())
-  //const userName="Rashmiranjan";
+  const name="rashmiranjan"
   return (
     <div>
-      {/* <h1>JSX in React js {userName}</h1>
-      <h1>{10+20+30}</h1>
-
-      <button onClick={()=>alert("hello")}>Click</button> */}
-      {/* <Fruit />
-      <Colours />
-
-      <Profile />
-      <Setting />
-      <Login />
-      <h1>{UserKey}</h1> */}
-
-{/* 
-      <h1>JSX Exercise</h1>
-      <ToDo /> */}
+  
+<h1>JSX with Curly Braces</h1>
+<h1>{name}</h1>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
     </div>
   );
 }
