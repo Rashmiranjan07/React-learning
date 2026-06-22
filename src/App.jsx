@@ -162,8 +162,10 @@ function App() {
   return (
     <div>
       <h1>Multiple Condition in React Toggle </h1>
+      <h1>{count}</h1>
+      <button onClick={()=>setCount(count+1)}>Counter</button>
       {
-        count == 0 ? <h1>Consition 1</h1> : null
+        count == 0 ? <h1>Condition 1</h1> : null
       }
     </div>
   )
