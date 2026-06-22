@@ -125,10 +125,20 @@
 //   );
 // }
 
+
+import { useState } from "react";
+
 function App() {
+
+
+  const [display,setDisplay]=useState(false)
   return (
     <div>
       <h1>Toggle in React js </h1>
+      {
+        display? <h1>Rashmiranjan shaw</h1> : null
+      }
+      
     </div>
   )
 }
