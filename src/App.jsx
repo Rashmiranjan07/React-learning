@@ -131,14 +131,20 @@ import { useState } from "react";
 function App() {
 
 
-  const [display,setDisplay]=useState(false)
+  const [display, setDisplay] = useState(true)
   return (
     <div>
       <h1>Toggle in React js </h1>
-      {
-        display? <h1>Rashmiranjan shaw</h1> : null
-      }
-      
+      <button onClick={() => setDisplay(!display)}>Toggle</button>
+
+      {/* {
+        display ? <h1>Rashmiranjan shaw</h1> : null
+      } */}
+
+
+      display ? <User:null /> : null
+
+
     </div>
   )
 }
