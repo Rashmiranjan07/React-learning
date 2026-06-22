@@ -181,6 +181,8 @@
 /* Props in React Js */
 import Props from "./Props";
 
+import College from "./College";
+
 function App() {
   // let userName="Rashmiranjan";
   // let age = 20;
@@ -204,8 +206,12 @@ function App() {
       <h1>Props in React Js</h1>
       {/* <Props name={userName} age={age} email={email} /> */}
 
+      <College />
+
       <Props user={userObject} />
       <Props user={userObject2} />
+
+      
 
     </div>
   )
