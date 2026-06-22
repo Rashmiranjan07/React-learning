@@ -4,7 +4,7 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
-import { useState } from "react";
+//import { useState } from "react";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -154,7 +154,8 @@ import { useState } from "react";
 
 
 /* Multiple Condition in React Toggle  */
-import { useState } from "react";
+
+import { useState } from "react"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -167,5 +168,6 @@ function App() {
     </div>
   )
 }
+
 export default App;
 
