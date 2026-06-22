@@ -126,28 +126,36 @@
 // }
 
 
-import { useState } from "react";
+// import { useState } from "react";
 
-function App() {
+// function App() {
 
 
-  const [display, setDisplay] = useState(true)
-  return (
+//   const [display, setDisplay] = useState(true)
+//   return (
+//     <div>
+//       <h1>Toggle in React js </h1>
+//       <button onClick={() => setDisplay(!display)}>Toggle</button>
+
+//       {/* {
+//         display ? <h1>Rashmiranjan shaw</h1> : null
+//       } */}
+
+
+//       display ? <User:null /> : null
+
+
+//     </div>
+//   )
+// }
+
+function App(){
+  const [dis]
+  return(
     <div>
-      <h1>Toggle in React js </h1>
-      <button onClick={() => setDisplay(!display)}>Toggle</button>
-
-      {/* {
-        display ? <h1>Rashmiranjan shaw</h1> : null
-      } */}
-
-
-      display ? <User:null /> : null
-
-
+      <h1>Multiple Condition in React toggle </h1>
     </div>
   )
 }
-
 export default App;
 
