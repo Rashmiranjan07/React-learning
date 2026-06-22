@@ -108,10 +108,18 @@
 
 
 function App() {
+  let fruit="apple";
+
+  const handleFruit=()=>{
+    fruit="Banana"
+  }
 
 
   return (
     <div>
+      <h1>State in React JS</h1>
+      <h1>{fruit}</h1>
+      <button onClick={handleFruit}>Change Fruit Name</button>
 
     </div>
   );
