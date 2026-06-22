@@ -4,6 +4,8 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
+import Props from "./Props";
+
 //import { useState } from "react";
 
 // function App() {
@@ -180,7 +182,16 @@
 
 
 /* Props in React Js */
+import Props from "./Props";
 
+function App() {
+  return (
+    <div>
+      <h1>Props in React Js</h1>
+      <Props />
+    </div>
+  )
+}
 
 export default App;
 
