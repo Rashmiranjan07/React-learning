@@ -128,10 +128,9 @@ import { useState } from "react";
 // }
 
 
+/* Toggle in React */
 // import { useState } from "react";
-
 // function App() {
-
 
 //   const [display, setDisplay] = useState(true)
 //   return (
