@@ -200,13 +200,14 @@ function App() {
     email: "peter@test.com"
   }
 
+  let collegeNames=['IET','DU','IIT','NIT','MIT']
 
   return (
     <div>
       <h1>Props in React Js</h1>
       {/* <Props name={userName} age={age} email={email} /> */}
 
-      <College />
+      {/* <College name={collegeNames} /> */}
 
       <Props user={userObject} />
       <Props user={userObject2} />
