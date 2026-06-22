@@ -182,12 +182,16 @@
 import Props from "./Props";
 
 function App() {
-let name="Rashmiranjan"
+let userName="Rashmiranjan";
+let age = 20;
+let email="rashmi@gmail.com"
+
+
 
   return (
     <div>
       <h1>Props in React Js</h1>
-      <Props name="rashmiranjan" age={20} email="heyyrashmiranjan02@gmail.com" />
+      <Props name={userName} age={age} email={email} />
     </div>
   )
 }
