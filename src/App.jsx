@@ -183,6 +183,10 @@ import Props from "./Props";
 
 import College from "./College";
 
+import Student from "./Student";
+
+import { useState } from "react";
+
 function App() {
   // let userName="Rashmiranjan";
   // let age = 20;
@@ -202,12 +206,16 @@ function App() {
 
   let collegeNames=['IET','DU','IIT','NIT','MIT']
 
+  const [student,setStudent]=useState("bhaskara")
+
   return (
     <div>
       <h1>Props in React Js</h1>
       {/* <Props name={userName} age={age} email={email} /> */}
 
-      {/* <College name={collegeNames} /> */}
+      {/* <College name={collegeNames[2]} /> */}
+
+      <Student name={student} />
 
       <Props user={userObject} />
       <Props user={userObject2} />
