@@ -4,6 +4,8 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
+import { useState } from "react";
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -149,11 +151,15 @@
 //   )
 // }
 
-function App(){
-  const [dis]
-  return(
+/* Multiple Condition in React Toggle  */
+
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0)
+  return (
     <div>
-      <h1>Multiple Condition in React toggle </h1>
+      <h1>Multiple Condition in React Toggle </h1>
     </div>
   )
 }
