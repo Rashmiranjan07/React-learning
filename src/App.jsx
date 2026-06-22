@@ -110,13 +110,10 @@ import { useState } from "react";
 
 function App() {
 
-
-  
-
   return (
     <div>
       <h1>State in React JS</h1>
-     
+
     </div>
   );
 }
