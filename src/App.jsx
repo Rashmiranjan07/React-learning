@@ -162,7 +162,7 @@ function App() {
     <div>
       <h1>Multiple Condition in React Toggle </h1>
       {
-        count==0? <h1>Consition 1</h1> : null
+        count == 0 ? <h1>Consition 1</h1> : null
       }
     </div>
   )
