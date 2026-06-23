@@ -4,6 +4,8 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
+import { useState } from "react";
+
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -227,32 +229,47 @@
 // }
 
 /* More Concept about Props */
-import User2 from "./User2";
-import Wrapper from "./Wrapper";
+// import User2 from "./User2";
+// import Wrapper from "./Wrapper";
+// function App() {
+//   return (
+//     <div>
+//       <h1>Props in React</h1>
+//       {/* <User2 name="Rashmiranjan" />
+//       <User2 /> */}
+
+
+//       <Wrapper color="orange">
+
+//         <h1>Helllo  everyone</h1>
+
+//       </Wrapper>
+
+//       <Wrapper>
+
+//         <h1>Helllo  Rashmi </h1>
+
+//       </Wrapper>
+
+
+
+//     </div>
+//   )
+// }
+
+/* Get Input Field value | On change event  */
+
 function App() {
+  const [val, setVal] = useState("")
   return (
     <div>
-      <h1>Props in React</h1>
-      {/* <User2 name="Rashmiranjan" />
-      <User2 /> */}
-
-
-      <Wrapper color="orange">
-
-        <h1>Helllo  everyone</h1>
-
-      </Wrapper>
-
-      <Wrapper>
-
-        <h1>Helllo  Rashmi </h1>
-
-      </Wrapper>
-
-
-
+      <h1>Get Input field value</h1>
+      <input type="text" value={val} onChange={(event) => setVal(event.target.value)} placeholder="Enter User name" />
+      <h1>{val}</h1>
+      <button onClick={() => setVal("")}>Clear value</button>
     </div>
   )
+
 }
 
 export default App;
