@@ -179,48 +179,60 @@
 
 
 /* Props in React Js */
-import Props from "./Props";
+// import Props from "./Props";
 
-import College from "./College";
+// import College from "./College";
 
-import Student from "./Student";
+// import Student from "./Student";
 
-import { useState } from "react";
+// import { useState } from "react";
 
-function App() {
-  // let userName="Rashmiranjan";
-  // let age = 20;
-  // let email="rashmi@gmail.com"
+// function App() {
+//   // let userName="Rashmiranjan";
+//   // let age = 20;
+//   // let email="rashmi@gmail.com"
 
-  let userObject = {
-    name: "Rashmiranjan",
-    age: "20",
-    email: "rashmi@test.com"
-  }
+//   let userObject = {
+//     name: "Rashmiranjan",
+//     age: "20",
+//     email: "rashmi@test.com"
+//   }
 
-   let userObject2 = {
-    name: "peter",
-    age: "21",
-    email: "peter@test.com"
-  }
+//    let userObject2 = {
+//     name: "peter",
+//     age: "21",
+//     email: "peter@test.com"
+//   }
 
-  let collegeNames=['IET','DU','IIT','NIT','MIT']
+//   let collegeNames=['IET','DU','IIT','NIT','MIT']
 
-  const [student,setStudent]=useState("bhaskara")
+//   const [student,setStudent]=useState("bhaskara")
 
-  return (
-    <div>
-      <h1>Props in React Js</h1>
-      {/* <Props name={userName} age={age} email={email} /> */}
+//   return (
+//     <div>
+//       <h1>Props in React Js</h1>
+//       {/* <Props name={userName} age={age} email={email} /> */}
 
-      {/* <College name={collegeNames[2]} /> */}
+//       {/* <College name={collegeNames[2]} /> */}
 
-      <Student name={student} />
+//       <Student name={student} />
 
-      <Props user={userObject} />
-      <Props user={userObject2} />
+//       <Props user={userObject} />
+//       <Props user={userObject2} />
 
       
+
+//     </div>
+//   )
+// }
+
+/* More Concept about Props */
+import User2 from "./User2";
+function App(){
+  return (
+    <div>
+      <h1>Props in React</h1>
+      <User2 />
 
     </div>
   )
