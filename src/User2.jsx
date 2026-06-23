@@ -1,7 +1,7 @@
-function User2(){
+function User2({name="New User"}){  // default Props concept 
     return(
         <div>
-            <h1>User Component</h1>
+            <h1>Hiii {name}</h1>
         </div>
 
     )

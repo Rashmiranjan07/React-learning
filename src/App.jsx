@@ -228,11 +228,23 @@
 
 /* More Concept about Props */
 import User2 from "./User2";
+import Wrapper from "./Wrapper";
 function App(){
   return (
     <div>
       <h1>Props in React</h1>
-      <User2 />
+      {/* <User2 name="Rashmiranjan" />
+      <User2 /> */}
+
+
+      <Wrapper>
+
+        <h1>Helllo  everyone</h1>
+
+      </Wrapper>
+
+
+
 
     </div>
   )
