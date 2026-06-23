@@ -259,17 +259,28 @@ import { useState } from "react";
 
 /* Get Input Field value | On change event  */
 
-function App() {
-  const [val, setVal] = useState("")
+// function App() {
+//   const [val, setVal] = useState("")
+//   return (
+//     <div>
+//       <h1>Get Input field value</h1>
+//       <input type="text" value={val} onChange={(event) => setVal(event.target.value)} placeholder="Enter User name" />
+//       <h1>{val}</h1>
+//       <button onClick={() => setVal("")}>Clear value</button>
+//     </div>
+//   )
+
+// }
+
+
+/* Controlled Components */
+
+function App(){
   return (
     <div>
-      <h1>Get Input field value</h1>
-      <input type="text" value={val} onChange={(event) => setVal(event.target.value)} placeholder="Enter User name" />
-      <h1>{val}</h1>
-      <button onClick={() => setVal("")}>Clear value</button>
+
     </div>
   )
-
 }
 
 export default App;
