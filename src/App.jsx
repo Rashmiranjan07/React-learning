@@ -285,14 +285,15 @@ function App() {
       <h1>Controller Component</h1>
       <form action="" method="get">
 
-        <input type="text" onChange={(event) => setName(event.target.value)} placeholder="Enter name " />
+        <input type="text" value={name} onChange={(event) => setName(event.target.value)} placeholder="Enter name " />
         <br /> <br />
-        <input type="password" onChange={(event) => setPassword(event.target.value)} placeholder="Enter password " />
+        <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Enter password " />
         <br /><br />
-        <input type="email" onChange={(event) => setEmail(event.target.value)} placeholder="Enter email " />
+        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="Enter email " />
         <br /><br />
 
         <button>Submit</button>
+        <button onClick={()=>{setEmail('');setName('');setPassword('')}}>Clear</button>
 
         <h3>{name}</h3>
         <h3>{password}
