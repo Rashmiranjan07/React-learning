@@ -295,10 +295,10 @@ function App() {
         <button>Submit</button>
         <button onClick={()=>{setEmail('');setName('');setPassword('')}}>Clear</button>
 
-        <h3>{name}</h3>
+        {/* <h3>{name}</h3>
         <h3>{password}
           <h3>{email}</h3>
-        </h3>
+        </h3> */}
       </form>
     </div>
   )
