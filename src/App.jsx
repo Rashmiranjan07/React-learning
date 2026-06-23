@@ -220,7 +220,7 @@
 //       <Props user={userObject} />
 //       <Props user={userObject2} />
 
-      
+
 
 //     </div>
 //   )
@@ -229,7 +229,7 @@
 /* More Concept about Props */
 import User2 from "./User2";
 import Wrapper from "./Wrapper";
-function App(){
+function App() {
   return (
     <div>
       <h1>Props in React</h1>
@@ -237,12 +237,17 @@ function App(){
       <User2 /> */}
 
 
-      <Wrapper>
+      <Wrapper color="orange">
 
         <h1>Helllo  everyone</h1>
 
       </Wrapper>
 
+      <Wrapper>
+
+        <h1>Helllo  Rashmi </h1>
+
+      </Wrapper>
 
 
 

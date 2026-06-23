@@ -1,6 +1,6 @@
-function Wrapper({children}){
+function Wrapper({children,color}){
     return(
-        <div style={{color:"green", border:"5px solid green", width:"300px"}}>
+        <div style={{color:color, border:"5px solid green", width:"300px"}}>
     {children}
         </div>
     )
