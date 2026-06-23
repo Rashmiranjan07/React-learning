@@ -4,7 +4,6 @@
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
-import { useState } from "react";
 
 
 // function App() {
@@ -275,10 +274,31 @@ import { useState } from "react";
 
 /* Controlled Components */
 
+import { useState } from "react";
 function App(){
+const [name,setName]=useState('r');
+const [password,setPassword]=useState('');
+const [email,setEmail]=useState('');
+
   return (
     <div>
+<h1>Controller Component</h1>
+<form action="" method="get">
 
+  <input type="text" placeholder="Enter name " />
+  <br /> <br />
+<input type="password" placeholder="Enter password " />
+<br /><br />
+<input type="email" placeholder="Enter email " />
+<br /><br />
+
+<button>Submit</button>
+
+<h3>{name}</h3>
+<h3>{password}
+  <h3>{email}</h3>
+</h3>
+</form>
     </div>
   )
 }
