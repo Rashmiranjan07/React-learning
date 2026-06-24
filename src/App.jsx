@@ -321,32 +321,134 @@
 
 
 /* Handle Radio and dropdown */
-import { useState } from "react";
+// import { useState } from "react";
+// function App() {
+
+//   const [gender, setGender] = useState('female');
+//   const [city, setCity] = useState('delhi')
+//   return (
+//     <div>
+//       <h1>Handle Radio and Dropdown</h1>
+//       <h4>Select gender</h4>
+//       <input type="radio" onChange={(event) => setGender(event.target.value)} name="gender" value={"male"} checked={gender == 'male'} id="male" />
+//       <label htmlFor="male">Male</label>
+//       <input type="radio" onChange={(event) => setGender(event.target.value)} name="gender" value={"female"} checked={gender == 'female'} id="female" />
+//       <label htmlFor="female">Female</label>
+//       <h2>Selected Gender : {gender}</h2>
+//       <br /> <br />
+//       <h4>Select City</h4>
+//       <select onChange={(event) => setCity(event.target.value)} defaultValue={"delhi"}>
+//         <option value="noida">Noida</option>
+//         <option value="gurgaon">Gurgaon</option>
+//         <option value="delhi">Delhi</option>
+//       </select>
+//       <h2>Selected city : {city}</h2>
+//     </div>
+//   )
+// }
+
+
+/* Loop in jsx with Map fucntion */
+
 function App() {
 
-  const [gender, setGender] = useState('female');
-  const [city, setCity] = useState('delhi')
+  const userData = [
+    {
+      name: 'anil',
+      age: '20',
+      email: "anil@gmail.com",
+      id: 1
+    },
+    {
+      name: 'sam',
+      age: '21',
+      email: "sam@gmail.com",
+      id: 2
+    },
+    {
+      name: 'peter',
+      age: '22',
+      email: "peter@gmail.com",
+      id: 3
+    },
+    {
+      name: 'bruce',
+      age: '24',
+      email: "bruce@gmail.com",
+      id: 4
+    }
+  ]
+
+
   return (
     <div>
-      <h1>Handle Radio and Dropdown</h1>
-      <h4>Select gender</h4>
-      <input type="radio" onChange={(event) => setGender(event.target.value)} name="gender" value={"male"} checked={gender == 'male'} id="male" />
-      <label htmlFor="male">Male</label>
-      <input type="radio" onChange={(event) => setGender(event.target.value)} name="gender" value={"female"} checked={gender == 'female'} id="female" />
-      <label htmlFor="female">Female</label>
-      <h2>Selected Gender : {gender}</h2>
-      <br /> <br />
-      <h4>Select City</h4>
-      <select onChange={(event) => setCity(event.target.value)} defaultValue={"delhi"}>
-        <option value="noida">Noida</option>
-        <option value="gurgaon">Gurgaon</option>
-        <option value="delhi">Delhi</option>
-      </select>
-      <h2>Selected city : {city}</h2>
+      <h1>Loop in JSX with Map Function </h1>
+      <table border="1" >
+        <thead>
+          <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Age</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          {
+            userData.map((user) => (
+              <tr>
+                <td>{user.id}</td>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
+                <td>{user.age}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+
+
+      <h1>Dummy Data</h1>
+      <table border="1">
+        <thead>
+          <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Age</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>rashmi</td>
+            <td>rashmi@gmail.com</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>rashmi</td>
+            <td>rashmi@gmail.com</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>rashmi</td>
+            <td>rashmi@gmail.com</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>rashmi</td>
+            <td>rashmi@gmail.com</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
   )
 }
-
 export default App;
 
 
