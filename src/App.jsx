@@ -453,50 +453,55 @@
 
 /* Reuse Component in Loop */
 
-import User3 from "./user3";
+// import User3 from "./user3";
 
-function App(){
+// function App() {
 
-  const userData = [
-    {
-      name: 'anil',
-      age: '20',
-      email: "anil@gmail.com",
-      id: 1
-    },
-    {
-      name: 'sam',
-      age: '21',
-      email: "sam@gmail.com",
-      id: 2
-    },
-    {
-      name: 'peter',
-      age: '22',
-      email: "peter@gmail.com",
-      id: 3
-    },
-    {
-      name: 'bruce',
-      age: '24',
-      email: "bruce@gmail.com",
-      id: 4
-    }
-  ]
+//   const userData = [
+//     {
+//       name: 'anil',
+//       age: '20',
+//       email: "anil@gmail.com",
+//       id: 1
+//     },
+//     {
+//       name: 'sam',
+//       age: '21',
+//       email: "sam@gmail.com",
+//       id: 2
+//     },
+//     {
+//       name: 'peter',
+//       age: '22',
+//       email: "peter@gmail.com",
+//       id: 3
+//     },
+//     {
+//       name: 'bruce',
+//       age: '24',
+//       email: "bruce@gmail.com",
+//       id: 4
+//     }
+//   ]
 
-  return(
-    <div>
-      <h1>Reuse Component in Loop</h1>
-      {
-        userData.map((user)=>(
-          <User3 />
-        ))
-      }
-      
+//   return (
+//     <div>
+//       <h1>Reuse Component in Loop</h1>
+//       {
+//         userData.map((user) => (
+//           <div key={user.id}>
+//             <User3 data={user} />
+//           </div>
+//         ))
+//       }
 
-    </div>
-  )
-}
+
+//     </div>
+//   )
+// }
+
+
+
 export default App;
 
 
