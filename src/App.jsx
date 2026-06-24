@@ -319,13 +319,22 @@
 
 
 /* Handle Radio and dropdown */
+
 function App() {
-  rerturn(
+  return(
     <div>
       <h1>Handle Radio and Dropdown</h1>
+      <h4>Select gender</h4>
+      <input type="radio" name="gender" id="male"/>
+       <label htmlFor="male">Male</label>
+      <input type="radio" name="gender" id="female"/>
+      <label htmlFor="female">Female</label>
+
     </div>
   )
 }
 
 export default App;
+
+
 
