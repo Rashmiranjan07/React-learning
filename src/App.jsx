@@ -305,12 +305,24 @@
 // }
 
 /* handle Checkbox */
-import Checkbox from "./Checkbox";
-function App() {
-  return (
+// import Checkbox from "./Checkbox";
+// function App() {
+//   return (
+//     <div>
+//       <h1> Handle Checkbox </h1>
+//       <Checkbox />
+//     </div>
+//   )
+// }
+
+
+
+
+/* Handle Radio and dropdown */
+function App(){
+  rerturn(
     <div>
-      <h1> Handle Checkbox </h1>
-      <Checkbox />
+      <h1>Handle Radio and Dropdown</h1>
     </div>
   )
 }
