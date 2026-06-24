@@ -527,6 +527,18 @@
 /* Array Nested  Loop */
 
 function App() {
+
+  const collegeData = [
+    {
+      name: "IET Alwar",
+    },
+    {
+      name: "IIT Delhi"
+    },
+    {
+      name: "KISET Hisar"
+    }
+  ]
   const
   return (
     <div>
