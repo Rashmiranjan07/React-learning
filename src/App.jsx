@@ -6,6 +6,8 @@
 
 
 
+
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -319,17 +321,19 @@
 
 
 /* Handle Radio and dropdown */
-
+import { useState } from "react";
 function App() {
-  return(
+
+  const [gender, setGender] = useState('female');
+  return (
     <div>
       <h1>Handle Radio and Dropdown</h1>
       <h4>Select gender</h4>
-      <input type="radio" name="gender" id="male"/>
-       <label htmlFor="male">Male</label>
-      <input type="radio" name="gender" id="female"/>
+      <input type="radio" onChange={(event) => setGender(event.target.value)} name="gender" value={"male"} checked={gender=='male'} id="male" />
+      <label htmlFor="male">Male</label>
+      <input type="radio" onChange={(event) => setGender(event.target.value)} name="gender" value={"female"} checked={gender=='female'} id="female" />
       <label htmlFor="female">Female</label>
-
+      <h2>Selected Gender : {gender}</h2>
     </div>
   )
 }
