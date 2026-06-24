@@ -319,7 +319,7 @@
 
 
 /* Handle Radio and dropdown */
-function App(){
+function App() {
   rerturn(
     <div>
       <h1>Handle Radio and Dropdown</h1>
