@@ -526,9 +526,9 @@
 
 /* Array Nested  Loop */
 
-function App(){
-  const 
-  return(
+function App() {
+  const
+  return (
     <div>
       <h1></h1>
     </div>
