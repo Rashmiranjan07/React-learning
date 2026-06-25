@@ -1,12 +1,18 @@
-function Counter2({counter,data}) {
-    const getCounter = () => {
-        console.log("call only");
+import { useEffect } from "react";
+
+const Counter2=({count})=>{
+    const handleCounter=()=>{
+        console.log("handleCounter called")
     }
-    getCounter()
-    return(
+
+    useEffect(()=>{
+        handleCounter();
+    },[])
+
+    return 
+    (
         <div>
-            <h1>{counter}</h1>
-            <h1>{data}</h1>
+            <h1>Counter Value {count}</h1>
         </div>
     )
 }

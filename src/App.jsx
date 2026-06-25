@@ -642,16 +642,22 @@
 
 /* Handle Props side effect with useEffect in component */
 
+import { useState } from "react";
 import Counter2 from "./Counter2";
 
 function App(){
+  const [count,setCount]=useState(0);
+  const [data,setData]=useState(0);
+
   return(
     <div>
-      <h1>Handle Props side Effect with useEffect in Component</h1>
-      <Counter2 />
+      <Counter2 count={count} />
+      <button onClick={()=>setCount(count+1)}>Counter</button>
+      <button onClick={()=>setCount(count+1)}>Counter</button>
     </div>
   )
 }
+
 export default App;
 
 
