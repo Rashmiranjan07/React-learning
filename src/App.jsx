@@ -642,20 +642,29 @@
 
 /* Handle Props side effect with useEffect in component */
 
-import { useState } from "react";
-import Counter2 from "./Counter2";
+// import { useState } from "react";
+// import Counter2 from "./Counter2";
 
-function App() {
-  const [count, setCount] = useState(0);
-  const [data, setData] = useState(0);
+// function App() {
+//   const [count, setCount] = useState(0);
+//   const [data, setData] = useState(0);
 
-  return (
+//   return (
+//     <div>
+//       <Counter2 count={count} data={data} />
+//       <button onClick={() => setCount(count + 1)}>Counter</button>
+//       <button onClick={() => setData(data + 1)}>Data</button>
+//     </div>
+//   )
+// }
+
+
+/* component Life Cycle */
+function App(){
+  return(
     <div>
-      <Counter2 count={count} data={data} />
-      <button onClick={() => setCount(count + 1)}>Counter</button>
-      <button onClick={() => setData(data + 1)}>Data</button>
+      <h1>Component Lifecycle </h1>
     </div>
   )
 }
-
 export default App;
