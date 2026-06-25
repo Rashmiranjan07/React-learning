@@ -8,6 +8,8 @@
 
 
 
+
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -525,7 +527,7 @@
 
 
 /* Array Nested  Loop */
-
+import College2 from "./College2";
 function App() {
 
   const collegeData = [
@@ -603,17 +605,7 @@ function App() {
       {
         collegeData.map((college,index)=>(
           <div key={index}>
-            <h1>Name: {college.name} </h1>
-            <ul>
-              <li>
-                <h3>City: {college.city}</h3>
-              </li>
-              <li>
-                <h3>Website: {college.website}</h3>
-              </li>
-            </ul>
-              
-        
+            <College2 college={college} />
           </div>
         ))
       }
