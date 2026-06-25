@@ -613,6 +613,14 @@
 //   )
 // }
 
+function App(){
+  return(
+    <div>
+      <h1>Hooks in React JS</h1>
+    </div>
+  )
+}
+
 export default App;
 
 
