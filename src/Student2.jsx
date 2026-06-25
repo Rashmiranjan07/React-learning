@@ -1,4 +1,4 @@
-const student2 = ({ student }) => {
+const Student2 = ({ student }) => {
     return (
         <div>
             <h3>Students: </h3>

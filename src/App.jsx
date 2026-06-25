@@ -527,91 +527,91 @@
 
 
 /* Array Nested  Loop */
-import College2 from "./College2";
-function App() {
+// import College2 from "./College2";
+// function App() {
 
-  const collegeData = [
-    {
-      name: "IET Alwar",
-      city:"Alwar",
-      website:"www.IEt.com",
-      student:[
-        {
-         name:"anil sidhu",
-         age:'29',
-         email:"ani@test.com"
-      },
-      {
-         name:"Peter ",
-         age:'25',
-         email:"peter@test.com"
-      },
-      {
-         name:"bruce",
-         age:'29',
-         email:"bruce@test.com"
-      }
-      ]
-    },
-    {
-      name: "IIT Delhi",
-      city:"Delhi",
-      website:"www.IIT.com",
-      student:[
-        {
-         name:"anil sidhu",
-         age:'29',
-         email:"ani@test.com"
-      },
-      {
-         name:"Peter ",
-         age:'25',
-         email:"peter@test.com"
-      },
-      {
-         name:"bruce",
-         age:'29',
-         email:"bruce@test.com"
-      },
-      ]
-    },
-    {
-      name: "KISET Hisar",
-      city:"Hisar",
-      website:"www.KISET.com",
-      student:[
-        {
-         name:"anil sidhu",
-         age:'29',
-         email:"ani@test.com"
-      },
-      {
-         name:"Peter ",
-         age:'25',
-         email:"peter@test.com"
-      },
-      {
-         name:"bruce",
-         age:'29',
-         email:"bruce@test.com"
-      },
-      ]
-    }
-  ]
+//   const collegeData = [
+//     {
+//       name: "IET Alwar",
+//       city:"Alwar",
+//       website:"www.IEt.com",
+//       student:[
+//         {
+//          name:"anil sidhu",
+//          age:'29',
+//          email:"ani@test.com"
+//       },
+//       {
+//          name:"Peter ",
+//          age:'25',
+//          email:"peter@test.com"
+//       },
+//       {
+//          name:"bruce",
+//          age:'29',
+//          email:"bruce@test.com"
+//       }
+//       ]
+//     },
+//     {
+//       name: "IIT Delhi",
+//       city:"Delhi",
+//       website:"www.IIT.com",
+//       student:[
+//         {
+//          name:"anil sidhu",
+//          age:'29',
+//          email:"ani@test.com"
+//       },
+//       {
+//          name:"Peter ",
+//          age:'25',
+//          email:"peter@test.com"
+//       },
+//       {
+//          name:"bruce",
+//          age:'29',
+//          email:"bruce@test.com"
+//       },
+//       ]
+//     },
+//     {
+//       name: "KISET Hisar",
+//       city:"Hisar",
+//       website:"www.KISET.com",
+//       student:[
+//         {
+//          name:"anil sidhu",
+//          age:'29',
+//          email:"ani@test.com"
+//       },
+//       {
+//          name:"Peter ",
+//          age:'25',
+//          email:"peter@test.com"
+//       },
+//       {
+//          name:"bruce",
+//          age:'29',
+//          email:"bruce@test.com"
+//       },
+//       ]
+//     }
+//   ]
   
-  return (
-    <div>
-      {/* <h1>Nested Looping with Component</h1> */}
-      {
-        collegeData.map((college,index)=>(
-          <div key={index}>
-            <College2 college={college} />
-          </div>
-        ))
-      }
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       {/* <h1>Nested Looping with Component</h1> */}
+//       {
+//         collegeData.map((college,index)=>(
+//           <div key={index}>
+//             <College2 college={college} />
+//           </div>
+//         ))
+//       }
+//     </div>
+//   )
+// }
 
 export default App;
 
