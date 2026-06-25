@@ -532,20 +532,91 @@ function App() {
     {
       name: "IET Alwar",
       city:"Alwar",
+      website:"www.IEt.com",
+      student:[
+        {
+         name:"anil sidhu",
+         age:'29',
+         email:"ani@test.com"
+      },
+      {
+         name:"Peter ",
+         age:'25',
+         email:"peter@test.com"
+      },
+      {
+         name:"bruce",
+         age:'29',
+         email:"bruce@test.com"
+      }
+      ]
     },
     {
       name: "IIT Delhi",
       city:"Delhi",
+      website:"www.IIT.com",
+      student:[
+        {
+         name:"anil sidhu",
+         age:'29',
+         email:"ani@test.com"
+      },
+      {
+         name:"Peter ",
+         age:'25',
+         email:"peter@test.com"
+      },
+      {
+         name:"bruce",
+         age:'29',
+         email:"bruce@test.com"
+      },
+      ]
     },
     {
       name: "KISET Hisar",
-      city:"Hisar"
+      city:"Hisar",
+      website:"www.KISET.com",
+      student:[
+        {
+         name:"anil sidhu",
+         age:'29',
+         email:"ani@test.com"
+      },
+      {
+         name:"Peter ",
+         age:'25',
+         email:"peter@test.com"
+      },
+      {
+         name:"bruce",
+         age:'29',
+         email:"bruce@test.com"
+      },
+      ]
     }
   ]
   
   return (
     <div>
-      <h1>hello</h1>
+      {/* <h1>Nested Looping with Component</h1> */}
+      {
+        collegeData.map((college,index)=>(
+          <div key={index}>
+            <h1>Name: {college.name} </h1>
+            <ul>
+              <li>
+                <h3>City: {college.city}</h3>
+              </li>
+              <li>
+                <h3>Website: {college.website}</h3>
+              </li>
+            </ul>
+              
+        
+          </div>
+        ))
+      }
     </div>
   )
 }
