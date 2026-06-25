@@ -531,18 +531,21 @@ function App() {
   const collegeData = [
     {
       name: "IET Alwar",
+      city:"Alwar",
     },
     {
-      name: "IIT Delhi"
+      name: "IIT Delhi",
+      city:"Delhi",
     },
     {
-      name: "KISET Hisar"
+      name: "KISET Hisar",
+      city:"Hisar"
     }
   ]
-  const
+  
   return (
     <div>
-      <h1></h1>
+      <h1>hello</h1>
     </div>
   )
 }
