@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 
-const Counter2=({count})=>{
-    const handleCounter=()=>{
+const Counter2 = ({ count }) => {
+    const handleCounter = () => {
         console.log("handleCounter called")
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         handleCounter();
-    },[])
+    }, [])
 
-    return 
+    return
     (
         <div>
             <h1>Counter Value {count}</h1>
