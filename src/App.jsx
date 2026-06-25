@@ -5,11 +5,6 @@
 // import './App.css'
 
 
-
-
-
-
-
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -598,7 +593,7 @@
 //       ]
 //     }
 //   ]
-  
+
 //   return (
 //     <div>
 //       {/* <h1>Nested Looping with Component</h1> */}
@@ -614,11 +609,26 @@
 // }
 
 /*  useEffect Hooks */
+import { useEffect, useState } from "react";
 
-function App(){
-  return(
+function App() {
+  const [counter, setCounter] = useState(0);
+  const [data, setData] = useState(0);
+
+  useEffect(() => {
+    callOnce();
+  }, [])
+
+  function callOnce() {
+    console.log("callOnce fucntion called ");
+  }
+
+
+  return (
     <div>
       <h1> useEffect Hooks in React JS</h1>
+      <button onClick={() => setCounter(counter + 1)} >Counter {counter}</button>
+      <button onClick={() => setData(data + 1)} >Data {data}</button>
     </div>
   )
 }
