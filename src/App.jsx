@@ -616,8 +616,14 @@ function App() {
   const [data, setData] = useState(0);
 
   useEffect(() => {
-    callOnce();
-  }, [])
+    //callOnce();
+    counterFunction();
+  }, [counter])
+
+  function counterFunction(){
+    console.log("counterFunction",counter);
+  }
+  //counterFunction();
 
   function callOnce() {
     console.log("callOnce fucntion called ");
