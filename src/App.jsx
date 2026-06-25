@@ -609,35 +609,35 @@
 // }
 
 /*  useEffect Hooks */
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-function App() {
-  const [counter, setCounter] = useState(0);
-  const [data, setData] = useState(0);
+// function App() {
+//   const [counter, setCounter] = useState(0);
+//   const [data, setData] = useState(0);
 
-  useEffect(() => {
-    //callOnce();
-    counterFunction();
-  }, [counter])
+//   useEffect(() => {
+//     //callOnce();
+//     counterFunction();
+//   }, [counter])
 
-  function counterFunction(){
-    console.log("counterFunction",counter);
-  }
-  //counterFunction();
+//   function counterFunction(){
+//     console.log("counterFunction",counter);
+//   }
+//   //counterFunction();
 
-  function callOnce() {
-    console.log("callOnce fucntion called ");
-  }
+//   function callOnce() {
+//     console.log("callOnce fucntion called ");
+//   }
 
 
-  return (
-    <div>
-      <h1> useEffect Hooks in React JS</h1>
-      <button onClick={() => setCounter(counter + 1)} >Counter {counter}</button>
-      <button onClick={() => setData(data + 1)} >Data {data}</button>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <h1> useEffect Hooks in React JS</h1>
+//       <button onClick={() => setCounter(counter + 1)} >Counter {counter}</button>
+//       <button onClick={() => setData(data + 1)} >Data {data}</button>
+//     </div>
+//   )
+// }
 
 export default App;
 
