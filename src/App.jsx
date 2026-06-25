@@ -645,15 +645,15 @@
 import { useState } from "react";
 import Counter2 from "./Counter2";
 
-function App(){
-  const [count,setCount]=useState(0);
-  const [data,setData]=useState(0);
+function App() {
+  const [count, setCount] = useState(0);
+  const [data, setData] = useState(0);
 
-  return(
+  return (
     <div>
       <Counter2 count={count} />
-      <button onClick={()=>setCount(count+1)}>Counter</button>
-      <button onClick={()=>setCount(count+1)}>Counter</button>
+      <button onClick={() => setCount(count + 1)}>Counter</button>
+      <button onClick={() => setCount(count + 1)}>Counter</button>
     </div>
   )
 }
