@@ -660,8 +660,11 @@
 
 
 /* component Life Cycle */
-function App(){
-  return(
+
+/* Styling in Ract JS */
+
+function App() {
+  return (
     <div>
       <h1>Component Lifecycle </h1>
     </div>
