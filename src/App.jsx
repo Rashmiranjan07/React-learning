@@ -613,10 +613,12 @@
 //   )
 // }
 
+/*  useEffect Hooks */
+
 function App(){
   return(
     <div>
-      <h1>Hooks in React JS</h1>
+      <h1> useEffect Hooks in React JS</h1>
     </div>
   )
 }
