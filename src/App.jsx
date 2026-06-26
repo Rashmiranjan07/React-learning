@@ -880,7 +880,14 @@
 //   )
 // }
 
+/* Add Bootstrap in React JS */
 
-
+function App(){
+  return(
+    <div>
+      <h1>Add Bootstrap</h1>
+    </div>
+  )
+}
 
 export default App;
