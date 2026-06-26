@@ -820,20 +820,21 @@
 
 /* Style with CSS modules */
 
-import UserProfile from "./UserProfile";
+// import UserProfile from "./UserProfile";
 
-function App() {
-  return (
-    <div>
-      <h1> Style with Css module</h1>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        <UserProfile />
-        <UserProfile />
-        <UserProfile />
-        <UserProfile />
-        <UserProfile />
-      </div>
-    </div>
-  )
-}
+// function App() {
+//   return (
+//     <div>
+//       <h1> Style with Css module</h1>
+//       <div style={{ display: "flex", flexWrap: "wrap" }}>
+//         <UserProfile />
+//         <UserProfile />
+//         <UserProfile />
+//         <UserProfile />
+//         <UserProfile />
+//       </div>
+//     </div>
+//   )
+// }
+
 export default App;
