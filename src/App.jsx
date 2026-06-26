@@ -5,6 +5,7 @@
 // import './App.css'
 
 
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -674,10 +675,38 @@
 // }
 
 /* Dynamic and Conditional Inline Style */
-function App(){
-  return(
+
+
+import { useState } from "react";
+
+function App() {
+
+  const [cardStyle, setCardStyle] = useState({
+    border: "1px solid #cccccc3b",
+    width: "200px",
+    boxShadow: "1px 2px 3px 0px #cccccc57",
+    margin: "10px"
+
+  })
+
+  const updateTheme = (bgColor, textColor) => {
+    console.log(bgColor, textColor);
+  }
+
+  return (
     <div>
-      <h1> </h1>
+      <h1 style={{ color: 'red' }}>Dynamic and Conditional Inline style </h1>
+      <button onClick={() => updateTheme('gray', 'green')}>Gray Theme</button>
+      <button onClick={() => updateTheme('white', 'black')}>Default Theme</button>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <div style={cardStyle}>
+          <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+          <div style={{ padding: '5px' }}>
+            <h4>Rashmiranjan Shaw</h4>
+            <p> Software Developer</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
