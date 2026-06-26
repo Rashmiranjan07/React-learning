@@ -839,10 +839,14 @@
 
 
 /* Styled Components */
+import styled from "styled-components";
 function App(){
+  const Heading=styled.h1`
+  `
   return(
     <div>
       <h1>Styled Components</h1>
+      <Heading> Hello Heading</Heading>
     </div>
   )
 }
