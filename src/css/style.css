@@ -1,19 +1,25 @@
-.heading{
+.heading {
     color: green;
 }
 
 
-.img-style{
+.img-style {
     width: 200px;
 }
 
-.user-card{
+.user-card {
     margin: 10px;
     width: 200px;
     border: 1px solid #ddd;
     box-shadow: 1px 1px 3px 1px #ddd;
 }
 
-.text-wrap{
+.text-wrap {
     padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
 }
