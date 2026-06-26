@@ -676,7 +676,6 @@
 
 /* Dynamic and Conditional Inline Style */
 
-
 import { useState } from "react";
 
 function App() {
@@ -689,19 +688,60 @@ function App() {
 
   })
 
+  const [textColor, setTextColor] = useState('black')
+
+  const [grid, setGrid] = useState(true)
+
   const updateTheme = (bgColor, textColor) => {
     setCardStyle({ ...cardStyle, backgroundColor: bgColor })
+    setTextColor(textColor)
   }
 
   return (
     <div>
       <h1 style={{ color: 'red' }}>Dynamic and Conditional Inline style </h1>
-      <button onClick={() => updateTheme('gray', 'green')}>Gray Theme</button>
+      <button onClick={() => updateTheme('#ccc', 'blue')}>Gray Theme</button>
       <button onClick={() => updateTheme('white', 'black')}>Default Theme</button>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <button onClick={() => setGrid(!grid)}>Toggle Grid</button>
+      <div style={{ display: grid ? 'flex' : 'block', flexWrap: 'wrap' }}>
         <div style={cardStyle}>
           <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
-          <div style={{ padding: '5px' }}>
+          <div style={{ padding: '5px', color: textColor }}>
+            <h4>Rashmiranjan Shaw</h4>
+            <p> Software Developer</p>
+          </div>
+        </div>
+        <div style={cardStyle}>
+          <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+          <div style={{ padding: '5px', color: textColor }}>
+            <h4>Rashmiranjan Shaw</h4>
+            <p> Software Developer</p>
+          </div>
+        </div>
+        <div style={cardStyle}>
+          <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+          <div style={{ padding: '5px', color: textColor }}>
+            <h4>Rashmiranjan Shaw</h4>
+            <p> Software Developer</p>
+          </div>
+        </div>
+        <div style={cardStyle}>
+          <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+          <div style={{ padding: '5px', color: textColor }}>
+            <h4>Rashmiranjan Shaw</h4>
+            <p> Software Developer</p>
+          </div>
+        </div>
+        <div style={cardStyle}>
+          <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+          <div style={{ padding: '5px', color: textColor }}>
+            <h4>Rashmiranjan Shaw</h4>
+            <p> Software Developer</p>
+          </div>
+        </div>
+        <div style={cardStyle}>
+          <img style={{ width: '200px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+          <div style={{ padding: '5px', color: textColor }}>
             <h4>Rashmiranjan Shaw</h4>
             <p> Software Developer</p>
           </div>
