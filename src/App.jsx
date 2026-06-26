@@ -6,6 +6,8 @@
 
 
 
+
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -817,9 +819,15 @@
 
 
 /* Style with CSS modules */
-function App(){
-  return(
-    <div></div>
+
+import UserProfile from "./UserProfile";
+
+function App() {
+  return (
+    <div>
+      <h1> Style with Css module</h1>
+      <UserProfile />
+    </div>
   )
 }
- export default App;
+export default App;
