@@ -1,3 +1,18 @@
 .heading{
     color: red;
 }
+
+.img{
+    width: 200px;
+}
+
+.card{
+    border: 1px solid #ddd;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px 1px #ddddddb8;
+}
+
+.textWrap{
+    padding: 1opx;
+}

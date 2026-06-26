@@ -826,7 +826,13 @@ function App() {
   return (
     <div>
       <h1> Style with Css module</h1>
-      <UserProfile />
+      <div style={{display:"flex",flexWrap:"wrap"}}>
+        <UserProfile />
+        <UserProfile />
+        <UserProfile />
+        <UserProfile />
+        <UserProfile />
+      </div>
     </div>
   )
 }
