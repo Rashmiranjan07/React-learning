@@ -882,10 +882,15 @@
 
 /* Add Bootstrap in React JS */
 
+import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
+
 function App(){
   return(
     <div>
       <h1>Add Bootstrap</h1>
+      <Button>OK</Button> 
+      <Alert variant="danger">Hello BT installed </Alert>
     </div>
   )
 }
