@@ -754,10 +754,63 @@
 
 
 /* External Style */
+
+import './css/style.css'
+
 function App(){
+
   return(
     <div>
-      <h1>External Style</h1>
+      <h1 className="heading">External Style</h1>
+      <div className='user-card'>
+        <div>
+          <img className='img-style' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+
+        </div>
+        <div className='text-wrap'>
+          <h4>Rashmiranjan shaw</h4>
+          <p>Software Developer</p>
+        </div>
+      </div>
+
+
+       <div className='user-card'>
+        <div>
+          <img className='img-style' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+
+        </div>
+        <div className='text-wrap'>
+          <h4>Rashmiranjan shaw</h4>
+          <p>Software Developer</p>
+        </div>
+      </div>
+
+
+       <div className='user-card'>
+        <div>
+          <img className='img-style' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+
+        </div>
+        <div className='text-wrap'>
+          <h4>Rashmiranjan shaw</h4>
+          <p>Software Developer</p>
+        </div>
+      </div>
+
+
+       <div className='user-card'>
+        <div>
+          <img className='img-style' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM-PViMF9Gx-Kmv_bWPhut0SAYrmLd2OR7Q&s" alt="" />
+
+        </div>
+        <div className='text-wrap'>
+          <h4>Rashmiranjan shaw</h4>
+          <p>Software Developer</p>
+        </div>
+      </div>
+
+
+      
     </div>
   )
 }
