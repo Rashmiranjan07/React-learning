@@ -899,35 +899,97 @@
 
 /* useRef Hook in React JS */
 
+// import { useRef } from "react";
+// function App() {
+
+//   const inputRef = useRef(null);
+//   const inputHandler = () => {
+//     console.log(inputRef);
+//     inputRef.current.focus();
+//     inputRef.current.style.color = 'red';
+//     inputRef.current.placeholder = "enter password";
+//     inputRef.current.value = "123";
+//   }
+
+//   const toggleHandler = () => {
+
+//     if (inputRef.current.style.display != 'none') {
+//       inputRef.current.style.display = 'none'
+//     } else {
+//       inputRef.current.style.display = 'inline'
+//     }
+//   }
+
+//   return (
+//     <div>
+//       <h1>useRef Hook</h1>
+//       <button onClick={toggleHandler}>Toggle</button>
+
+//       <input ref={inputRef} type="text" placeholder="Enter user name" />
+//       <button onClick={inputHandler}>Focus on Input field </button>
+//     </div>
+//   )
+// }
+
+
+/* uncontrolled component */
+
 import { useRef } from "react";
+
 function App() {
 
-  const inputRef = useRef(null);
-  const inputHandler = () => {
-    console.log(inputRef);
-    inputRef.current.focus();
-    inputRef.current.style.color = 'red';
-    inputRef.current.placeholder = "enter password";
-    inputRef.current.value = "123";
+
+  const userRef = useRef();
+  const passwordRef = useRef();
+
+
+  const handleFormRef = (event) => {
+    event.preventDefault();
+    const user = document.querySelector("#user").value;
+    const password = document.querySelector("#password").value;
+
+    console.log(user, password);
+
   }
 
-  const toggleHandler = () => {
+  const handleForm = (event) => {
+    event.preventDefault();
+    const user = userRef.current.value
+    const password = passwordRef.current.value
 
-    if (inputRef.current.style.display != 'none') {
-      inputRef.current.style.display = 'none'
-    } else {
-      inputRef.current.style.display = 'inline'
-    }
+    console.log("handleFormRef", user, password);
+
   }
 
   return (
     <div>
-      <h1>useRef Hook</h1>
-      <button onClick={toggleHandler}>Toggle</button>
+      <h1>Uncontrolled Component</h1>
+      <form action="" method="post" onSubmit={handleForm}>
+        <input type="text" id="userRef" placeholder="enter user name" />
+        <br /><br />
+        <input type="password" id="passwordRef" placeholder="enter password" />
+        <br /> <br />
+        <button>
+          Submit with Ref
+        </button>
+      </form>
 
-      <input ref={inputRef} type="text" placeholder="Enter user name" />
-      <button onClick={inputHandler}>Focus on Input field </button>
+      <hr />
+
+      <h1>Uncontrolled Component with useref </h1>
+      <form action="" method="post" onSubmit={handleFormRef}>
+        <input type="text" ref={userRef} id="user" placeholder="enter user name" />
+        <br /><br />
+        <input type="password" ref={passwordRef} id="password" placeholder="enter password" />
+        <br /> <br />
+        <button>
+          Submit
+        </button>
+      </form>
+
+
     </div>
   )
 }
+
 export default App;
