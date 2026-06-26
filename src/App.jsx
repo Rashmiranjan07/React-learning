@@ -665,10 +665,19 @@
 /* Inline style */
 
 
-function App() {
-  return (
+// function App() {
+//   return (
+//     <div>
+//       <h1 style={{color:'red', backgroundColor:'black'}}>Inline Style in React Js</h1>
+//     </div>
+//   )
+// }
+
+/* Dynamic and Conditional Inline Style */
+function App(){
+  return(
     <div>
-      <h1 style={{color:'red', backgroundColor:'black'}}>Inline Style in React Js</h1>
+      <h1> </h1>
     </div>
   )
 }
