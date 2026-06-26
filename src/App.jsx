@@ -690,7 +690,7 @@ function App() {
   })
 
   const updateTheme = (bgColor, textColor) => {
-    console.log(bgColor, textColor);
+    setCardStyle({ ...cardStyle, backgroundColor: bgColor })
   }
 
   return (
