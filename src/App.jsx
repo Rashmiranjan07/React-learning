@@ -1019,11 +1019,22 @@
 
 
 /* ForwardRef in React */
+import { useRef } from "react";
+import Userinput from "./Userinput";
 
 function App(){
+  const inputRef=useRef(null)
+
+  const updateInput=()=>{
+   inputRef.current.value=1000;
+   inputRef.current.focus();
+  }
   return(
     <div>
       <h1>ForwardRef in React</h1>
+      {/* <input type="text" ref={inputRef} /> */}
+      <Userinput />
+      <button onClick={updateInput}>Update  input filed</button>
       
     </div>
   )
