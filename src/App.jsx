@@ -1043,11 +1043,34 @@
 
 
 /* useFormStatus hook */
+import { useFormStatus } from "react-dom";
+function App() {
 
-function App(){
-  return(
+  const handleSubmit = async () => {
+    await new Promise(res => setTimeout(res, 2000));
+    console.log("submit");
+  }
+
+  function CustomerForm() {
+    const { pending } = useFormStatus();
+    console.log("pending");
+    return (
+      <div>
+        <input type="text" placeholder="Enter name" />
+        <br /> <br />
+        <input type="text" placeholder="Enter Password" />
+        <br /><br />
+        <button disabled={pending}>Submit</button>
+      </div>
+    )
+  }
+
+  return (
     <div>
       <h1>useFormStatus Hook</h1>
+      <form action={handleSubmit}>
+        <CustomerForm />
+      </form>
     </div>
   )
 }
