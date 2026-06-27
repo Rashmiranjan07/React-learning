@@ -1,9 +1,11 @@
-const Userinput=()=>{
+import { forwardRef } from "react"
+
+const Userinput=(props,ref)=>{
     return(
         <div>
-         <input type="text" />
+         <input type="text" ref={ref} />
         </div>
     )
 }
 
-export default Userinput;
+export default forwardRef(Userinput);

@@ -1028,12 +1028,13 @@ function App(){
   const updateInput=()=>{
    inputRef.current.value=1000;
    inputRef.current.focus();
+   inputRef.current.style.color="red"
   }
   return(
     <div>
       <h1>ForwardRef in React</h1>
       {/* <input type="text" ref={inputRef} /> */}
-      <Userinput />
+      <Userinput ref={inputRef} />
       <button onClick={updateInput}>Update  input filed</button>
       
     </div>
