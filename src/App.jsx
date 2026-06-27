@@ -992,4 +992,15 @@
 //   )
 // }
 
+
+/* Pass Function in Component as Prps */
+
+function App(){
+  return(
+    <div>
+      <h1>Pass Function in component as props</h1>
+    </div>
+  )
+}
+
 export default App;
