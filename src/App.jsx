@@ -995,26 +995,26 @@
 
 /* Pass Function in Component as Prps */
 
-import User4 from "./User4";
+// import User4 from "./User4";
 
-function App() {
+// function App() {
 
-  const displayName = (name) => {
-    alert(name)
-  }
+//   const displayName = (name) => {
+//     alert(name)
+//   }
 
-  return (
-    <div>
-      <h1>Called parent component from child component</h1>
+//   return (
+//     <div>
+//       <h1>Called parent component from child component</h1>
 
-      <User4 displayName={displayName} name="Anil" />
-      <User4 displayName={displayName} name="sam" />
-      <User4 displayName={displayName} name="peter" />
-      <User4 displayName={displayName} name="bruce" />
+//       <User4 displayName={displayName} name="Anil" />
+//       <User4 displayName={displayName} name="sam" />
+//       <User4 displayName={displayName} name="peter" />
+//       <User4 displayName={displayName} name="bruce" />
 
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
 export default App;
