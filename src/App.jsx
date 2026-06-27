@@ -5,9 +5,6 @@
 // import './App.css'
 
 
-
-
-
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -1077,14 +1074,29 @@
 
 
 /* useTransition Hook in react js */
+import { useState, useTransition } from "react";
+function App() {
 
-function App(){
-  return(
+  const [pending, startTransition] = useTransition();
+  const handleButton = async () => {
+    startTransition(async () => {
+      await new Promise(res => setTimeout(res, 2000));
+    })
+
+
+  }
+
+  return (
     <div>
-      <h1></h1>
+      <h1> useTransition Hook in React JS </h1>
+      {
+        pending ?
+          <img style={{ width: "100px" }} src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" />
+          : null
+      }
+      <button disabled={pending} onClick={handleButton}>Click</button>
     </div>
   )
 }
-
 
 export default App;
