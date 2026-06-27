@@ -997,18 +997,18 @@
 
 import User4 from "./User4";
 
-function App(){
+function App() {
 
-  const displayName=()=>{
+  const displayName = () => {
     alert("displayName fucntion")
   }
 
-  return(
+  return (
     <div>
       <h1>Called parent component from child component</h1>
-  
-    <User4 displayName={displayName}/>
-  
+
+      <User4 displayName={displayName} />
+
     </div>
   )
 }
