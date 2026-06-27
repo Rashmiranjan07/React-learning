@@ -1019,24 +1019,35 @@
 
 
 /* ForwardRef in React */
-import { useRef } from "react";
-import Userinput from "./Userinput";
+// import { useRef } from "react";
+// import Userinput from "./Userinput";
 
-function App() {
-  const inputRef = useRef(null)
+// function App() {
+//   const inputRef = useRef(null)
 
-  const updateInput = () => {
-    inputRef.current.value = 1000;
-    inputRef.current.focus();
-    inputRef.current.style.color = "red"
-  }
-  return (
+//   const updateInput = () => {
+//     inputRef.current.value = 1000;
+//     inputRef.current.focus();
+//     inputRef.current.style.color = "red"
+//   }
+//   return (
+//     <div>
+//       <h1>ForwardRef in React</h1>
+//       {/* <input type="text" ref={inputRef} /> */}
+//       <Userinput ref={inputRef} />
+//       <button onClick={updateInput}>Update  input filed</button>
+
+//     </div>
+//   )
+// }
+
+
+/* useFormStatus hook */
+
+function App(){
+  return(
     <div>
-      <h1>ForwardRef in React</h1>
-      {/* <input type="text" ref={inputRef} /> */}
-      <Userinput ref={inputRef} />
-      <button onClick={updateInput}>Update  input filed</button>
-
+      <h1></h1>
     </div>
   )
 }
