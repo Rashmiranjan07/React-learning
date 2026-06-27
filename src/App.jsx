@@ -995,10 +995,14 @@
 
 /* Pass Function in Component as Prps */
 
+import User4 from "./User4";
+
 function App(){
   return(
     <div>
       <h1>Pass Function in component as props</h1>
+
+      <User4 />
     </div>
   )
 }
