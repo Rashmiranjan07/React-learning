@@ -1022,21 +1022,21 @@
 import { useRef } from "react";
 import Userinput from "./Userinput";
 
-function App(){
-  const inputRef=useRef(null)
+function App() {
+  const inputRef = useRef(null)
 
-  const updateInput=()=>{
-   inputRef.current.value=1000;
-   inputRef.current.focus();
-   inputRef.current.style.color="red"
+  const updateInput = () => {
+    inputRef.current.value = 1000;
+    inputRef.current.focus();
+    inputRef.current.style.color = "red"
   }
-  return(
+  return (
     <div>
       <h1>ForwardRef in React</h1>
       {/* <input type="text" ref={inputRef} /> */}
       <Userinput ref={inputRef} />
       <button onClick={updateInput}>Update  input filed</button>
-      
+
     </div>
   )
 }
