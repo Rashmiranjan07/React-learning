@@ -1,11 +1,9 @@
-function User4(){
+function User4({displayName}) {
 
-    const displayName = (name) => {
-        alert(name)
-    }
-    return(
+
+    return (
         <div>
-            <button onClick={()=>displayName("Rashmi")}>Display User</button>
+            <button onClick={displayName}>Display User</button>
         </div>
     )
 }

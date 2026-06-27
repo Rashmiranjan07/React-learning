@@ -998,11 +998,17 @@
 import User4 from "./User4";
 
 function App(){
+
+  const displayName=()=>{
+    alert("displayName fucntion")
+  }
+
   return(
     <div>
-      <h1>Pass Function in component as props</h1>
-
-      <User4 />
+      <h1>Called parent component from child component</h1>
+  
+    <User4 displayName={displayName}/>
+  
     </div>
   )
 }
