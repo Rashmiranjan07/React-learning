@@ -999,8 +999,8 @@ import User4 from "./User4";
 
 function App() {
 
-  const displayName = () => {
-    alert("displayName fucntion")
+  const displayName = (name) => {
+    alert(name)
   }
 
   return (
@@ -1008,6 +1008,10 @@ function App() {
       <h1>Called parent component from child component</h1>
 
       <User4 displayName={displayName} />
+      <User4 displayName={displayName} />
+      <User4 displayName={displayName} />
+      <User4 displayName={displayName} />
+
 
     </div>
   )
