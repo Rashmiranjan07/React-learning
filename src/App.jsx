@@ -934,62 +934,62 @@
 
 /* uncontrolled component */
 
-import { useRef } from "react";
+// import { useRef } from "react";
 
-function App() {
-
-
-  const userRef = useRef();
-  const passwordRef = useRef();
+// function App() {
 
 
-  const handleFormRef = (event) => {
-    event.preventDefault();
-    const user = document.querySelector("#user").value;
-    const password = document.querySelector("#password").value;
-
-    console.log(user, password);
-
-  }
-
-  const handleForm = (event) => {
-    event.preventDefault();
-    const user = userRef.current.value
-    const password = passwordRef.current.value
-
-    console.log("handleFormRef", user, password);
-
-  }
-
-  return (
-    <div>
-      <h1>Uncontrolled Component</h1>
-      <form action="" method="post" onSubmit={handleForm}>
-        <input type="text" id="userRef" placeholder="enter user name" />
-        <br /><br />
-        <input type="password" id="passwordRef" placeholder="enter password" />
-        <br /> <br />
-        <button>
-          Submit with Ref
-        </button>
-      </form>
-
-      <hr />
-
-      <h1>Uncontrolled Component with useref </h1>
-      <form action="" method="post" onSubmit={handleFormRef}>
-        <input type="text" ref={userRef} id="user" placeholder="enter user name" />
-        <br /><br />
-        <input type="password" ref={passwordRef} id="password" placeholder="enter password" />
-        <br /> <br />
-        <button>
-          Submit
-        </button>
-      </form>
+//   const userRef = useRef();
+//   const passwordRef = useRef();
 
 
-    </div>
-  )
-}
+//   const handleFormRef = (event) => {
+//     event.preventDefault();
+//     const user = document.querySelector("#user").value;
+//     const password = document.querySelector("#password").value;
+
+//     console.log(user, password);
+
+//   }
+
+//   const handleForm = (event) => {
+//     event.preventDefault();
+//     const user = userRef.current.value
+//     const password = passwordRef.current.value
+
+//     console.log("handleFormRef", user, password);
+
+//   }
+
+//   return (
+//     <div>
+//       <h1>Uncontrolled Component</h1>
+//       <form action="" method="post" onSubmit={handleForm}>
+//         <input type="text" id="userRef" placeholder="enter user name" />
+//         <br /><br />
+//         <input type="password" id="passwordRef" placeholder="enter password" />
+//         <br /> <br />
+//         <button>
+//           Submit with Ref
+//         </button>
+//       </form>
+
+//       <hr />
+
+//       <h1>Uncontrolled Component with useref </h1>
+//       <form action="" method="post" onSubmit={handleFormRef}>
+//         <input type="text" ref={userRef} id="user" placeholder="enter user name" />
+//         <br /><br />
+//         <input type="password" ref={passwordRef} id="password" placeholder="enter password" />
+//         <br /> <br />
+//         <button>
+//           Submit
+//         </button>
+//       </form>
+
+
+//     </div>
+//   )
+// }
 
 export default App;
