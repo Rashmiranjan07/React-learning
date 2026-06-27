@@ -1,4 +1,4 @@
-function User4({displayName}) {
+function User4({ displayName }) {
 
 
     return (
