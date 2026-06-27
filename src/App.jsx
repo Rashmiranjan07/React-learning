@@ -1017,4 +1017,16 @@
 //   )
 // }
 
+
+/* ForwardRef in React */
+
+function App(){
+  return(
+    <div>
+      <h1>ForwardRef in React</h1>
+    </div>
+  )
+}
+
+
 export default App;
