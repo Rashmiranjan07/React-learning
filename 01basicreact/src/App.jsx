@@ -1,3 +1,4 @@
+// This react project is made by vite 
 function App() {
 
   return (
@@ -7,4 +8,3 @@ function App() {
 
 export default App
 
-// This react project is made by vite 
