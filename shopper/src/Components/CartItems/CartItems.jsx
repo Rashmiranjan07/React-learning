@@ -31,7 +31,30 @@ const CartItems = () => {
                         <hr />
                     </div>
                 }
+                return null;
             })}
+            <div className="cartitems-down">
+                <div className="cartitems-total">
+                    <h1>Cart Total</h1>
+                    <div>
+                       <div className="cartitems-total-item">
+                        <p>Subtotal</p>
+                        <p>${0}</p>
+                        </div> 
+                        <hr />
+                        <div className="cartitems-total-item">
+                            <p>Shipping Fee</p>
+                            <p>Free</p>
+                        </div>
+                        <hr />
+                        <div className="cartitems-total-item">
+                            <h3>Total</h3>
+                            <h3>${0}</h3>
+                        </div>
+                    </div>
+                    <button>Proceed to Checkout</button>
+                </div>
+            </div>
         </div>
     )
 }
