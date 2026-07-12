@@ -41,7 +41,19 @@ const ShopContextProvider = (props) => {
         return totalAmount;
     }
 
-    const contextValue = { getTotalCartAmount, all_product, cartItems, addToCart, removeFromCart };
+    const getTotalCartItems = ()=>{
+        let totalItem = 0;
+        for(const item in cartItems)
+        {
+            if(cartItems[item]>0)
+            {
+                totalItem += cartItems[item];
+            }
+        }
+        return totalItem;
+    }
+
+    const contextValue = {getTotalCartItems, getTotalCartAmount, all_product, cartItems, addToCart, removeFromCart };
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
